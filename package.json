@@ -18,7 +18,6 @@
     "build:watch": "babel src -x .ts -d build --watch",
     "lint": "eslint --ext .ts ./src ./__test__",
     "lint:fix": "eslint --ext .ts --fix ./src ./__test__",
-    "pretest": "npm run lint",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
