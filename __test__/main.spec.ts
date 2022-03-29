@@ -12,4 +12,10 @@ describe('Kata simple pig', () => {
 
     expect(pig.pigIt('A')).toBe('Aay');
   });
+
+  it("Should return the same letter adding 'ay' at the end of each letter", () => {
+    const pig = new Main();
+
+    expect(pig.pigIt('A B')).toBe('Aay Bay');
+  });
 });
