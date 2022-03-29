@@ -2,13 +2,13 @@
  * Main Class
  */
 export class Main {
-  public pigIt(phrase: string): string {
-    let phraseSplitted = phrase.split(' ');
-    phraseSplitted = phraseSplitted.map(word => {
-      return word + 'ay';
-    });
+  private suffix = 'ay';
 
-    const result = phraseSplitted.join(' ');
+  public pigIt(phrase: string): string {
+    const phraseSplitted = phrase.split(' ');
+    const phraseSplittedSuffix = phraseSplitted.map(word => word + this.suffix);
+    const result = phraseSplittedSuffix.join(' ');
+
     return result;
   }
 }
