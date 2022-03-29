@@ -1,10 +1,15 @@
 import { Main } from '../src/main';
 
-// pigIt('A') -> 'A'
+/**
+ * Listado de tests:
+ * pigIt('A') -> 'Aay'
+ * pigIt('A B') -> 'Aay Bay'
+ * pigIt('Hello) -> 'elloHay'
+ */
 describe('Kata simple pig', () => {
-  it('Should return the same letter', () => {
+  it("Should return the same letter adding 'ay'", () => {
     const pig = new Main();
 
-    expect(pig.pigIt('A')).toBe('A');
+    expect(pig.pigIt('A')).toBe('Aay');
   });
 });
