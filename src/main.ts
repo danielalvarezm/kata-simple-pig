@@ -3,6 +3,6 @@
  */
 export class Main {
   public pigIt(phrase: string): string {
-    return phrase;
+    return phrase + 'ay';
   }
 }
